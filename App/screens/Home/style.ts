@@ -6,52 +6,58 @@ import {isTablet, scaleFontSize} from '../../constants';
 const height = Dimensions.get('window').height;
 
 export default StyleSheet.create({
-  imageBg: {
-    width: '100%',
-    height: '100%',
-  },
-
   container: {
-    margin: RFValue(28, height),
+    alignItems: 'center',
     flex: 1,
+    backgroundColor: COLORS.background,
   },
 
-  logo: {
-    marginTop: isTablet ? RFValue(14, height) : scaleFontSize(12),
+  homeImage: {
+    width: isTablet ? '50%' : '80%',
+    height: '50%',
+    flex: 0.45,
   },
 
   textContainer: {
-    justifyContent: 'center',
-    flex: 1,
-    position: 'relative',
-    bottom: '8%',
+    flex: 0.55,
+    justifyContent: 'space-around',
+    paddingHorizontal: RFValue(30, height),
+    alignItems: 'center',
   },
 
   textWelcome: {
-    color: COLORS.black,
-    fontSize: isTablet ? RFValue(56, height) : scaleFontSize(42),
-    fontFamily: 'Montserrat-ExtraBold',
-    marginBottom: RFValue(2, height),
-    letterSpacing: 0.5,
+    textAlign: 'center',
+    marginTop: RFValue(18, height),
+    color: COLORS.grey,
+    fontSize: isTablet ? RFValue(17, height) : scaleFontSize(15),
+    fontFamily: 'Poppins-Regular',
   },
 
   textMain: {
-    color: COLORS.black,
-    fontSize: isTablet ? RFValue(26, height) : scaleFontSize(20),
-    fontFamily: 'Montserrat-SemiBold',
-    letterSpacing: 0.3,
+    alignItems: 'center',
+    letterSpacing: 1,
+    textAlign: 'center',
+    color: COLORS.white,
+    fontSize: isTablet ? RFValue(34, height) : scaleFontSize(32),
+    fontFamily: 'Poppins-Semibold',
   },
 
   loginContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginTop: RFValue(24, height),
+    justifyContent: 'center',
+    height: RFValue(68, height),
+    width: RFValue(270, height),
+    backgroundColor: COLORS.deepPurple,
+    borderRadius: 30,
+    borderColor: COLORS.purple,
+    borderWidth: 1.5,
   },
 
   loginText: {
-    color: COLORS.black,
-    fontSize: isTablet ? RFValue(30, height) : scaleFontSize(27),
-    fontFamily: 'Montserrat-ExtraBold',
-    marginRight: 5,
+    alignItems: 'center',
+    letterSpacing: 1,
+    textAlign: 'center',
+    color: COLORS.white,
+    fontSize: isTablet ? RFValue(17, height) : scaleFontSize(23),
+    fontFamily: 'Poppins-Medium',
   },
 });

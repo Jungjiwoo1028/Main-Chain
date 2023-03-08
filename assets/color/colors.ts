@@ -1,9 +1,8 @@
 export enum COLORS {
-  navy = '#293760',
-  background = '#FFFAED',
-  lightGreen = '#B8DFCE',
-  yellow = '#FFDA7A',
-  orange = '#EE7663',
-  black = '#302E2D',
+  background = '#0E0529',
+  grey = '#555074',
+  purple = '#5C54D8',
+  deepPurple = '#22193B',
   white = '#fff',
+  pink = '#F96A72',
 }

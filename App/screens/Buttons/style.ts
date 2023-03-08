@@ -6,48 +6,31 @@ import {isTablet, scaleFontSize} from '../../constants';
 const height = Dimensions.get('window').height;
 export default StyleSheet.create({
   container: {
-    backgroundColor: COLORS.navy,
+    backgroundColor: COLORS.background,
     width: '100%',
     height: '100%',
     flex: 1,
+    alignItems: 'center',
     padding: RFValue(27, height),
-    flexDirection: 'row',
-    flexWrap: 'wrap',
     gap: RFValue(26, height),
   },
 
   buttonContainer: {
+    justifyContent: 'center',
+    width: '94%',
+    backgroundColor: COLORS.grey,
     shadowColor: '#222',
-    shadowOffset: {width: 3, height: 3},
-    shadowOpacity: 0.9,
+    shadowOffset: {width: 2, height: 2},
+    shadowOpacity: 0.5,
     shadowRadius: 7,
     borderRadius: 20,
-    width: isTablet ? RFValue(155, height) : scaleFontSize(155),
-    height: isTablet ? RFValue(155, height) : scaleFontSize(155),
-    padding: RFValue(15, height),
-    justifyContent: 'space-between',
+    height: isTablet ? RFValue(130, height) : scaleFontSize(120),
   },
 
   buttonText: {
-    color: COLORS.black,
-    fontFamily: 'Montserrat-ExtraBold',
-    fontSize: isTablet ? RFValue(22, height) : scaleFontSize(22),
-  },
-
-  buttonImgSize: {width: '100%', height: '100%'},
-
-  scanImage: {
-    width: isTablet ? RFValue(90, height) : scaleFontSize(98),
-    height: isTablet ? RFValue(76, height) : scaleFontSize(86),
-  },
-
-  contactImage: {
-    width: isTablet ? RFValue(90, height) : scaleFontSize(100),
-    height: isTablet ? RFValue(76, height) : scaleFontSize(78),
-  },
-
-  catalogueImge: {
-    width: isTablet ? RFValue(90, height) : scaleFontSize(98),
-    height: isTablet ? RFValue(76, height) : scaleFontSize(86),
+    textAlign: 'center',
+    color: COLORS.white,
+    fontFamily: 'Poppins-Semibold',
+    fontSize: isTablet ? RFValue(34, height) : scaleFontSize(32),
   },
 });

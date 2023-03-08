@@ -7,8 +7,8 @@ const height = Dimensions.get('window').height;
 
 export default StyleSheet.create({
   buttonTitle: {
-    color: COLORS.background,
-    fontFamily: 'Montserrat-SemiBold',
+    color: COLORS.white,
+    fontFamily: 'Poppins-SemiBold',
     fontSize: isTablet ? RFValue(21, height) : scaleFontSize(19),
   },
 });

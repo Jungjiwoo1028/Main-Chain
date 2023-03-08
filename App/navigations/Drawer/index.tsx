@@ -16,7 +16,7 @@ const AppDrawer = () => {
 
   const leftBack = () => (
     <TouchableOpacity onPress={() => navigation.goBack()}>
-      <AntDesign name="left" color={COLORS.background} size={20} />
+      <AntDesign name="left" color={COLORS.white} size={20} />
     </TouchableOpacity>
   );
 
@@ -41,7 +41,7 @@ const AppDrawer = () => {
           headerTitleStyle: style.buttonTitle,
           title: '3 Buttons',
           headerStyle: {
-            backgroundColor: COLORS.navy,
+            backgroundColor: COLORS.background,
           },
           headerLeft: leftBack,
         }}

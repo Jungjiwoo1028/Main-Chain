@@ -1,14 +1,17 @@
 import {NavigationProp, useNavigation} from '@react-navigation/native';
-import React, {FC, useRef, useState} from 'react';
+import React, {FC, useState} from 'react';
 import {
   View,
   Text,
   SafeAreaView,
-  ImageBackground,
   TouchableOpacity,
   TextInput,
+  Image,
+  Dimensions,
 } from 'react-native';
-import LogoSvg from '../../components/Svgs/LogoSvg';
+import {RFValue} from 'react-native-responsive-fontsize';
+import {COLORS} from '../../../assets/color/colors';
+import {validateEmail, validatePw} from '../../constants';
 import {DrawerScreenNames} from '../../navigations/types';
 import style from './style';
 
@@ -19,58 +22,74 @@ type ParamList = {
 
 const Login: FC = () => {
   const navigation = useNavigation<NavigationProp<ParamList>>();
-  const emailRef = useRef(null);
   const [email, setEmail] = useState<string>('');
-  const pwRef = useRef(null);
+  const [emailValidate, setEmailValidate] = useState<boolean>(true);
   const [pw, setPw] = useState<string>('');
+  const [pwValidate, setPwValidate] = useState<boolean>(true);
+  const height = Dimensions.get('window').height;
 
   return (
-    <View>
-      <ImageBackground
-        source={require('../../../assets/images/background-login.png')}
-        style={style.imageBg}>
-        <SafeAreaView style={style.container}>
-          <TouchableOpacity
-            onPress={() => navigation.navigate(DrawerScreenNames.HOME, {})}>
-            <LogoSvg style={style.logo} />
-          </TouchableOpacity>
-        </SafeAreaView>
-
-        <View style={style.loginContainer}>
-          <Text style={style.textLogin}>content de {'\n'}vous revoir</Text>
-          <View style={style.emailContainer}>
+    <SafeAreaView style={style.container}>
+      <Image
+        source={require('../../../assets/images/login.png')}
+        resizeMode="contain"
+        style={style.loginImage}
+      />
+      <View style={style.loginContainer}>
+        <View style={{width: '100%'}}>
+          <View style={style.inputContainer}>
             <Text style={style.textInputLabel}>Email</Text>
             <TextInput
+              onEndEditing={() => {
+                if (validateEmail(email)) {
+                  setEmailValidate(true);
+                } else {
+                  setEmailValidate(false);
+                }
+              }}
               placeholder="Email"
-              ref={emailRef}
+              placeholderTextColor={COLORS.grey}
               defaultValue={email}
               onChangeText={(email: string) => setEmail(email)}
-              style={style.textInput}
+              style={{
+                ...style.textInputStyle,
+                borderColor: emailValidate ? COLORS.purple : COLORS.pink,
+              }}
             />
           </View>
-          <View style={style.pwContainer}>
+          <View
+            style={{
+              ...style.inputContainer,
+              marginTop: RFValue(27, height),
+            }}>
             <Text style={style.textInputLabel}>Mot de passe</Text>
             <TextInput
+              placeholderTextColor={COLORS.grey}
               placeholder="Mot de passe"
-              ref={pwRef}
               secureTextEntry={true}
               defaultValue={pw}
               onChangeText={(pw: string) => setPw(pw)}
-              style={style.textInput}
+              onEndEditing={() => {
+                if (validatePw(pw)) {
+                  setPwValidate(true);
+                } else {
+                  setPwValidate(false);
+                }
+              }}
+              style={{
+                borderColor: pwValidate ? COLORS.purple : COLORS.pink,
+                ...style.textInputStyle,
+              }}
             />
           </View>
-          <TouchableOpacity
-            onPress={() => navigation.navigate(DrawerScreenNames.BUTTONS, {})}
-            style={style.buttonContainer}>
-            <ImageBackground
-              style={style.buttonBg}
-              source={require('../../../assets/images/login-button.png')}>
-              <Text style={style.textNext}>Next</Text>
-            </ImageBackground>
-          </TouchableOpacity>
         </View>
-      </ImageBackground>
-    </View>
+        <TouchableOpacity
+          onPress={() => navigation.navigate(DrawerScreenNames.BUTTONS, {})}
+          style={style.buttonContainer}>
+          <Text style={style.textLogin}>Login</Text>
+        </TouchableOpacity>
+      </View>
+    </SafeAreaView>
   );
 };
 export default Login;
