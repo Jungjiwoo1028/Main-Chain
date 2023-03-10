@@ -7,19 +7,23 @@ const height = Dimensions.get('window').height;
 
 export default StyleSheet.create({
   container: {
+    marginVertical: RFValue(48, height),
     alignItems: 'center',
+    justifyContent: 'space-between',
     flex: 1,
-    backgroundColor: COLORS.background,
   },
 
   homeImage: {
-    width: isTablet ? '50%' : '80%',
-    height: '50%',
-    flex: 0.45,
+    flex: isTablet ? 0.5 : 0.5,
+  },
+
+  iconImage: {
+    flex: isTablet ? 0.3 : 0.3,
   },
 
   textContainer: {
-    flex: 0.55,
+    width: isTablet ? '60%' : '90%',
+    flex: 0.4,
     justifyContent: 'space-around',
     paddingHorizontal: RFValue(30, height),
     alignItems: 'center',
@@ -27,37 +31,26 @@ export default StyleSheet.create({
 
   textWelcome: {
     textAlign: 'center',
-    marginTop: RFValue(18, height),
     color: COLORS.grey,
-    fontSize: isTablet ? RFValue(17, height) : scaleFontSize(15),
-    fontFamily: 'Poppins-Regular',
-  },
-
-  textMain: {
-    alignItems: 'center',
-    letterSpacing: 1,
-    textAlign: 'center',
-    color: COLORS.white,
-    fontSize: isTablet ? RFValue(34, height) : scaleFontSize(32),
-    fontFamily: 'Poppins-Semibold',
+    fontSize: isTablet ? RFValue(25, height) : scaleFontSize(16),
+    fontFamily: 'Montserrat-Regular',
   },
 
   loginContainer: {
     justifyContent: 'center',
-    height: RFValue(68, height),
-    width: RFValue(270, height),
-    backgroundColor: COLORS.deepPurple,
-    borderRadius: 30,
-    borderColor: COLORS.purple,
+    height: isTablet ? RFValue(100, height) : RFValue(68, height),
+    width: isTablet ? RFValue(400, height) : RFValue(270, height),
+    backgroundColor: COLORS.background,
+    borderRadius: isTablet ? 60 : 30,
+    borderColor: COLORS.border,
     borderWidth: 1.5,
   },
 
   loginText: {
     alignItems: 'center',
-    letterSpacing: 1,
     textAlign: 'center',
     color: COLORS.white,
-    fontSize: isTablet ? RFValue(17, height) : scaleFontSize(23),
-    fontFamily: 'Poppins-Medium',
+    fontSize: isTablet ? RFValue(32, height) : scaleFontSize(23),
+    fontFamily: 'Montserrat-SemiBold',
   },
 });

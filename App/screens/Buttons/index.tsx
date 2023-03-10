@@ -1,31 +1,57 @@
 import React, {FC} from 'react';
-import {View, Text, TouchableOpacity} from 'react-native';
+import {
+  Text,
+  TouchableOpacity,
+  SafeAreaView,
+  ImageBackground,
+  Dimensions,
+} from 'react-native';
+import {RFValue} from 'react-native-responsive-fontsize';
+import {DrawerScreenNames} from '../../navigations/types';
 import style from './style';
 
-const Buttons: FC = () => {
+const height = Dimensions.get('window').height;
+
+const Buttons: FC = ({navigation}: any) => {
   const BUTTON_DATA = [
     {
       id: '1',
-      title: 'Scan',
+      title: `MainChain ${'\n'}SAAS`,
+      name: DrawerScreenNames.SAAS,
+      test: 'Saas',
     },
     {
       id: '2',
-      title: 'Contact devis',
+      title: 'Scan',
+      name: DrawerScreenNames.SCAN,
+      test: 'Scan',
     },
     {
       id: '3',
-      title: 'Catalogue',
+      title: `Services ${'\n'}Request`,
+      name: DrawerScreenNames.SERVICES,
+      test: 'Services',
     },
   ];
 
   return (
-    <View style={style.container}>
-      {BUTTON_DATA.map((item, i) => (
-        <TouchableOpacity style={style.buttonContainer} key={i + item.title}>
-          <Text style={style.buttonText}>{item.title}</Text>
-        </TouchableOpacity>
-      ))}
-    </View>
+    <ImageBackground
+      source={require('../../../assets/images/background.png')}
+      style={{height: '100%', width: '100%'}}>
+      <SafeAreaView style={style.container}>
+        {BUTTON_DATA.map((item, i) => (
+          <TouchableOpacity
+            onPress={() => navigation.navigate(item.name)}
+            style={{
+              ...style.buttonContainer,
+              marginTop: i === 0 ? RFValue(40, height) : undefined,
+            }}
+            key={i + item.title}>
+            <Text style={style.buttonText}>{item.title}</Text>
+          </TouchableOpacity>
+        ))}
+      </SafeAreaView>
+    </ImageBackground>
   );
 };
 export default Buttons;

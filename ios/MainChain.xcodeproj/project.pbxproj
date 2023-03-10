@@ -8,18 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* celaneo_appTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* celaneo_appTests.m */; };
-		0C80B921A6F3F58F76C31292 /* libPods-celaneo_app.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-celaneo_app.a */; };
+		0E0246F446C848589F3017B3 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4613F54FD4FA4ED59DB73C61 /* Montserrat-Light.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		26D24EDF1988FC5BC51B4E4E /* libPods-MainChain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4050850584263CCAA7DF38 /* libPods-MainChain.a */; };
+		2D7842C1F34A9EF2F8C7EA2F /* libPods-MainChain-MainChainTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B4B65D07739C564BCC85426 /* libPods-MainChain-MainChainTests.a */; };
 		39A5687436154ADB83C66CF2 /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC2A236082384ABCA51C3EB2 /* Montserrat-ExtraBold.ttf */; };
 		4A43CC2AB0E14E5F85357271 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 16068E6E9673487EBB1DA6FF /* Poppins-Light.ttf */; };
-		7699B88040F8A987B510C191 /* libPods-celaneo_app-celaneo_appTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-celaneo_app-celaneo_appTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		83F57782785247559A93B207 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00543BFEE1DA4335BCB880C0 /* Poppins-SemiBold.ttf */; };
 		A431682F185F490B82046464 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF334C4D81964E42AFB8951A /* Poppins-Regular.ttf */; };
+		A5F6A48ED9B24F2A8B6213D0 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 431AED7460844EFFA2C7D3AA /* Montserrat-Medium.ttf */; };
+		C89C3BC550454FACAD67B159 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB5E38D2FF7143989AAC7B62 /* Montserrat-Regular.ttf */; };
 		FE606702056D4739B546984A /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F74AF8CAAF224AF1815DB1AC /* Montserrat-SemiBold.ttf */; };
 		FFDBA2D3B16442788812D9EC /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8BAC4853B174FD585FA97D0 /* Poppins-Medium.ttf */; };
-		83F57782785247559A93B207 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00543BFEE1DA4335BCB880C0 /* Poppins-SemiBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,29 +36,36 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E356EE1AD99517003FC87E /* celaneo_appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = celaneo_appTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00543BFEE1DA4335BCB880C0 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-SemiBold.ttf"; path = "../assets/fonts/Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		00E356EE1AD99517003FC87E /* MainChainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MainChainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* celaneo_appTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = celaneo_appTests.m; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* celaneo_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = celaneo_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B4B65D07739C564BCC85426 /* libPods-MainChain-MainChainTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MainChain-MainChainTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* MainChain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MainChain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = celaneo_app/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = celaneo_app/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = celaneo_app/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = celaneo_app/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = celaneo_app/main.m; sourceTree = "<group>"; };
 		16068E6E9673487EBB1DA6FF /* Poppins-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Light.ttf"; path = "../assets/fonts/Poppins-Light.ttf"; sourceTree = "<group>"; };
-		19F6CBCC0A4E27FBF8BF4A61 /* libPods-celaneo_app-celaneo_appTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-celaneo_app-celaneo_appTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C2501F15AA3E210D9878CF3 /* Pods-MainChain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MainChain.debug.xcconfig"; path = "Target Support Files/Pods-MainChain/Pods-MainChain.debug.xcconfig"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-celaneo_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-celaneo_app.debug.xcconfig"; path = "Target Support Files/Pods-celaneo_app/Pods-celaneo_app.debug.xcconfig"; sourceTree = "<group>"; };
+		431AED7460844EFFA2C7D3AA /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Medium.ttf"; path = "../assets/fonts/Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		4613F54FD4FA4ED59DB73C61 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Light.ttf"; path = "../assets/fonts/Montserrat-Light.ttf"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-celaneo_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-celaneo_app.release.xcconfig"; path = "Target Support Files/Pods-celaneo_app/Pods-celaneo_app.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-celaneo_app-celaneo_appTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-celaneo_app-celaneo_appTests.debug.xcconfig"; path = "Target Support Files/Pods-celaneo_app-celaneo_appTests/Pods-celaneo_app-celaneo_appTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5DCACB8F33CDC322A6C60F78 /* libPods-celaneo_app.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-celaneo_app.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = celaneo_app/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-celaneo_app-celaneo_appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-celaneo_app-celaneo_appTests.release.xcconfig"; path = "Target Support Files/Pods-celaneo_app-celaneo_appTests/Pods-celaneo_app-celaneo_appTests.release.xcconfig"; sourceTree = "<group>"; };
 		AC2A236082384ABCA51C3EB2 /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-ExtraBold.ttf"; path = "../assets/fonts/Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
+		B506321E51D84AB862363EBC /* Pods-MainChain-MainChainTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MainChain-MainChainTests.debug.xcconfig"; path = "Target Support Files/Pods-MainChain-MainChainTests/Pods-MainChain-MainChainTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BA4050850584263CCAA7DF38 /* libPods-MainChain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MainChain.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB5E38D2FF7143989AAC7B62 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Regular.ttf"; path = "../assets/fonts/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		CF334C4D81964E42AFB8951A /* Poppins-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Regular.ttf"; path = "../assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		DFB847E0D414B2873694E691 /* Pods-MainChain-MainChainTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MainChain-MainChainTests.release.xcconfig"; path = "Target Support Files/Pods-MainChain-MainChainTests/Pods-MainChain-MainChainTests.release.xcconfig"; sourceTree = "<group>"; };
 		E8BAC4853B174FD585FA97D0 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Medium.ttf"; path = "../assets/fonts/Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F301B5ABE82EC3647D2FEE3C /* Pods-MainChain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MainChain.release.xcconfig"; path = "Target Support Files/Pods-MainChain/Pods-MainChain.release.xcconfig"; sourceTree = "<group>"; };
 		F74AF8CAAF224AF1815DB1AC /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-SemiBold.ttf"; path = "../assets/fonts/Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
-		00543BFEE1DA4335BCB880C0 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; name = "Poppins-SemiBold.ttf"; path = "../assets/fonts/Poppins-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7699B88040F8A987B510C191 /* libPods-celaneo_app-celaneo_appTests.a in Frameworks */,
+				2D7842C1F34A9EF2F8C7EA2F /* libPods-MainChain-MainChainTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C80B921A6F3F58F76C31292 /* libPods-celaneo_app.a in Frameworks */,
+				26D24EDF1988FC5BC51B4E4E /* libPods-MainChain.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,8 +122,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				5DCACB8F33CDC322A6C60F78 /* libPods-celaneo_app.a */,
-				19F6CBCC0A4E27FBF8BF4A61 /* libPods-celaneo_app-celaneo_appTests.a */,
+				BA4050850584263CCAA7DF38 /* libPods-MainChain.a */,
+				0B4B65D07739C564BCC85426 /* libPods-MainChain-MainChainTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -127,6 +137,9 @@
 				AC2A236082384ABCA51C3EB2 /* Montserrat-ExtraBold.ttf */,
 				F74AF8CAAF224AF1815DB1AC /* Montserrat-SemiBold.ttf */,
 				00543BFEE1DA4335BCB880C0 /* Poppins-SemiBold.ttf */,
+				4613F54FD4FA4ED59DB73C61 /* Montserrat-Light.ttf */,
+				431AED7460844EFFA2C7D3AA /* Montserrat-Medium.ttf */,
+				CB5E38D2FF7143989AAC7B62 /* Montserrat-Regular.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -157,8 +170,8 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* celaneo_app.app */,
-				00E356EE1AD99517003FC87E /* celaneo_appTests.xctest */,
+				13B07F961A680F5B00A75B9A /* MainChain.app */,
+				00E356EE1AD99517003FC87E /* MainChainTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -170,6 +183,10 @@
 				5709B34CF0A7D63546082F79 /* Pods-celaneo_app.release.xcconfig */,
 				5B7EB9410499542E8C5724F5 /* Pods-celaneo_app-celaneo_appTests.debug.xcconfig */,
 				89C6BE57DB24E9ADA2F236DE /* Pods-celaneo_app-celaneo_appTests.release.xcconfig */,
+				1C2501F15AA3E210D9878CF3 /* Pods-MainChain.debug.xcconfig */,
+				F301B5ABE82EC3647D2FEE3C /* Pods-MainChain.release.xcconfig */,
+				B506321E51D84AB862363EBC /* Pods-MainChain-MainChainTests.debug.xcconfig */,
+				DFB847E0D414B2873694E691 /* Pods-MainChain-MainChainTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -177,9 +194,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* celaneo_appTests */ = {
+		00E356ED1AD99517003FC87E /* MainChainTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "celaneo_appTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "MainChainTests" */;
 			buildPhases = (
 				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -193,14 +210,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = celaneo_appTests;
+			name = MainChainTests;
 			productName = celaneo_appTests;
-			productReference = 00E356EE1AD99517003FC87E /* celaneo_appTests.xctest */;
+			productReference = 00E356EE1AD99517003FC87E /* MainChainTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* celaneo_app */ = {
+		13B07F861A680F5B00A75B9A /* MainChain */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "celaneo_app" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "MainChain" */;
 			buildPhases = (
 				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -215,9 +232,9 @@
 			);
 			dependencies = (
 			);
-			name = celaneo_app;
+			name = MainChain;
 			productName = celaneo_app;
-			productReference = 13B07F961A680F5B00A75B9A /* celaneo_app.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* MainChain.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -237,7 +254,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "celaneo_app" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "MainChain" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -250,8 +267,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* celaneo_app */,
-				00E356ED1AD99517003FC87E /* celaneo_appTests */,
+				13B07F861A680F5B00A75B9A /* MainChain */,
+				00E356ED1AD99517003FC87E /* MainChainTests */,
 			);
 		};
 /* End PBXProject section */
@@ -276,6 +293,9 @@
 				39A5687436154ADB83C66CF2 /* Montserrat-ExtraBold.ttf in Resources */,
 				FE606702056D4739B546984A /* Montserrat-SemiBold.ttf in Resources */,
 				83F57782785247559A93B207 /* Poppins-SemiBold.ttf in Resources */,
+				0E0246F446C848589F3017B3 /* Montserrat-Light.ttf in Resources */,
+				A5F6A48ED9B24F2A8B6213D0 /* Montserrat-Medium.ttf in Resources */,
+				C89C3BC550454FACAD67B159 /* Montserrat-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,15 +324,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-celaneo_app/Pods-celaneo_app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-MainChain/Pods-MainChain-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-celaneo_app/Pods-celaneo_app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-MainChain/Pods-MainChain-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-celaneo_app/Pods-celaneo_app-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MainChain/Pods-MainChain-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
@@ -330,7 +350,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-celaneo_app-celaneo_appTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-MainChain-MainChainTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -352,7 +372,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-celaneo_app-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-MainChain-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -365,15 +385,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-celaneo_app-celaneo_appTests/Pods-celaneo_app-celaneo_appTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-MainChain-MainChainTests/Pods-MainChain-MainChainTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-celaneo_app-celaneo_appTests/Pods-celaneo_app-celaneo_appTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-MainChain-MainChainTests/Pods-MainChain-MainChainTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-celaneo_app-celaneo_appTests/Pods-celaneo_app-celaneo_appTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MainChain-MainChainTests/Pods-MainChain-MainChainTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
@@ -382,15 +402,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-celaneo_app/Pods-celaneo_app-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-MainChain/Pods-MainChain-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-celaneo_app/Pods-celaneo_app-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-MainChain/Pods-MainChain-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-celaneo_app/Pods-celaneo_app-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MainChain/Pods-MainChain-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
@@ -399,15 +419,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-celaneo_app-celaneo_appTests/Pods-celaneo_app-celaneo_appTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-MainChain-MainChainTests/Pods-MainChain-MainChainTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-celaneo_app-celaneo_appTests/Pods-celaneo_app-celaneo_appTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-MainChain-MainChainTests/Pods-MainChain-MainChainTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-celaneo_app-celaneo_appTests/Pods-celaneo_app-celaneo_appTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MainChain-MainChainTests/Pods-MainChain-MainChainTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -454,7 +474,7 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* celaneo_app */;
+			target = 13B07F861A680F5B00A75B9A /* MainChain */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -462,7 +482,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-celaneo_app-celaneo_appTests.debug.xcconfig */;
+			baseConfigurationReference = B506321E51D84AB862363EBC /* Pods-MainChain-MainChainTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -483,13 +503,13 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/celaneo_app.app/celaneo_app";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MainChain.app/MainChain";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-celaneo_app-celaneo_appTests.release.xcconfig */;
+			baseConfigurationReference = DFB847E0D414B2873694E691 /* Pods-MainChain-MainChainTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -507,13 +527,13 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/celaneo_app.app/celaneo_app";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MainChain.app/MainChain";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-celaneo_app.debug.xcconfig */;
+			baseConfigurationReference = 1C2501F15AA3E210D9878CF3 /* Pods-MainChain.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
@@ -522,6 +542,7 @@
 				DEVELOPMENT_TEAM = 5F6Y5PG87T;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = celaneo_app/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MainChain;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -533,7 +554,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = celaneo_app;
+				PRODUCT_NAME = MainChain;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -543,7 +564,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-celaneo_app.release.xcconfig */;
+			baseConfigurationReference = F301B5ABE82EC3647D2FEE3C /* Pods-MainChain.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
@@ -551,6 +572,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5F6Y5PG87T;
 				INFOPLIST_FILE = celaneo_app/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MainChain;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -562,7 +584,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = celaneo_app;
+				PRODUCT_NAME = MainChain;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -709,7 +731,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "celaneo_appTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "MainChainTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -718,7 +740,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "celaneo_app" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "MainChain" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -727,7 +749,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "celaneo_app" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "MainChain" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

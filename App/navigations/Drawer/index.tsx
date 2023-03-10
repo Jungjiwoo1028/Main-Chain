@@ -9,13 +9,21 @@ import AntDesign from 'react-native-vector-icons/AntDesign';
 import {useNavigation} from '@react-navigation/native';
 import {DrawerScreenNames} from '../types';
 import style from './style';
+import Saas from '../../screens/Saas';
+import Services from '../../screens/Services';
 
 const AppDrawer = () => {
   const Stack = createNativeStackNavigator();
   const navigation = useNavigation();
 
   const leftBack = () => (
-    <TouchableOpacity onPress={() => navigation.goBack()}>
+    <TouchableOpacity
+      onPress={() => navigation.goBack()}
+      style={{
+        height: 44,
+        width: 44,
+        justifyContent: 'center',
+      }}>
       <AntDesign name="left" color={COLORS.white} size={20} />
     </TouchableOpacity>
   );
@@ -31,22 +39,55 @@ const AppDrawer = () => {
       />
       <Stack.Screen
         options={{
-          headerShown: false,
+          headerTransparent: true,
+          headerTitleStyle: style.buttonTitle,
+          title: 'Login',
+          headerStyle: {
+            backgroundColor: COLORS.header,
+          },
+          headerLeft: leftBack,
         }}
         component={Login}
         name={DrawerScreenNames.LOGIN}
       />
       <Stack.Screen
         options={{
+          headerTransparent: true,
           headerTitleStyle: style.buttonTitle,
           title: '3 Buttons',
           headerStyle: {
-            backgroundColor: COLORS.background,
+            backgroundColor: COLORS.header,
           },
           headerLeft: leftBack,
         }}
         component={Buttons}
         name={DrawerScreenNames.BUTTONS}
+      />
+      <Stack.Screen
+        options={{
+          headerTransparent: true,
+          headerTitleStyle: style.buttonTitle,
+          title: 'MainChain SAAS',
+          headerStyle: {
+            backgroundColor: COLORS.header,
+          },
+          headerLeft: leftBack,
+        }}
+        component={Saas}
+        name={DrawerScreenNames.SAAS}
+      />
+      <Stack.Screen
+        options={{
+          headerTransparent: true,
+          headerTitleStyle: style.buttonTitle,
+          title: 'Services Request',
+          headerStyle: {
+            backgroundColor: COLORS.header,
+          },
+          headerLeft: leftBack,
+        }}
+        component={Services}
+        name={DrawerScreenNames.SERVICES}
       />
     </Stack.Navigator>
   );
